@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igniters Convert Meister</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to Igniters Convert Meister</h1>
+    <form action="/convert" method="post" class="centered-form">
+        <label for="choice">Select conversion:</label>
+        <select name="choice" id="choice">
+            <option value="1">Inches to Feet</option>
+            <option value="2">Feet to Inches</option>
+            <option value="3">Feet to Yards</option>
+            <option value="4">Yards to Feet</option>
+            <option value="5">Meters to Feet</option>
+            <option value="6">Feet to Meters</option>
+            <option value="7">Miles to Feet</option>
+            <option value="8">Feet to Miles</option>
+            <option value="9">Kilometers to Miles</option>
+            <option value="10">Miles to Kilometers</option>
+            <option value="11">Pounds to Kilograms</option>
+            <option value="12">Kilograms to Pounds</option>
+            <option value="13">Fahrenheit to Celsius</option>
+            <option value="14">Celsius to Fahrenheit</option>
+            <option value="15">Feet to Centimeters</option>
+            <option value="16">Centimeters to Feet</option>
+            <option value="17">Gallons to Liters</option>
+            <option value="18">Liters to Gallons</option>
+            <option value="19">Ounces to Grams</option>
+            <option value="20">Grams to Ounces</option>
+            <option value="21">Hours to Minutes</option>
+            <option value="22">Minutes to Hours</option>
+            <option value="23">Days to Hours</option>
+            <option value="24">Hours to Days</option>
+            <option value="25">Miles to Knots</option>
+            <option value="26">Knots to Miles</option>
+        </select>
+        <br>
+        <label for="value">Enter value:</label>
+        <input type="number" name="value" id="value" required>
+        <br>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>

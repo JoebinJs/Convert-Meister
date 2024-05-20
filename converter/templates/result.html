@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='des.png') }}'); /* Use url_for() to get the correct path */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #333; /* Text color */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Make the container full height of the viewport */
+            margin: 0; /* Remove default margin */
+        }
+        
+
+        .container {
+            text-align: center; /* Center align content */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Add margin to bottom of heading */
+        }
+
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 20px; /* Add padding to create margin around the box */
+            border-radius: 10px; /* Add border radius */
+            margin-bottom: 20px; /* Add margin to bottom of box */
+        }
+
+        .btn {
+            display: inline-block; /* Change link to inline-block */
+            padding: 10px 20px; /* Add padding to button */
+            background-color: #4CAF50; /* Button background color */
+            color: #fff; /* Button text color */
+            text-decoration: none; /* Remove default underline */
+            border-radius: 5px; /* Add border radius */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+
+        .btn:hover {
+            background-color: #45a049; /* Darken button color on hover */
+        }
+
+        p {
+            text-align: center; /* Center align the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversion Result</h1>
+        <div class="result-box">
+            <p>The answer is equal to {{ result }} {{ unit_to }}</p>
+        </div>
+        <a href="/" class="btn">Back to Home</a> <!-- Add the "btn" class to style the link as a button -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* styles.css */
+
+body {
+    background-image: url('Designer.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the container full height of the viewport */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    position: absolute; /* Position the heading */
+    top: 20px; /* Adjust top position */
+    left: 50%; /* Move it to the center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.centered-form {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    border-radius: 10px;
+    text-align: center; /* Center-align content inside the form */
+}
+
+.centered-form label {
+    color: #ffffff; /* Label text color */
+}
+
+.centered-form select,
+.centered-form input[type="number"],
+.centered-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.centered-form select {
+    background-color: #ffffff; /* Select background color */
+}
+
+.centered-form input[type="number"] {
+    background-color: #ffffff; /* Change background color to white */
+    color: #000000; /* Text color */
+}
+
+.centered-form button {
+    background-color: #4CAF50; /* Input and button background color */
+    color: #ffffff; /* Input and button text color */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.centered-form input[type="number"]:focus,
+.centered-form button:focus {
+    outline: none;
+}
